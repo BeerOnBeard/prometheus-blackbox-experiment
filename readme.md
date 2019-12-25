@@ -1,4 +1,4 @@
-# Prometheus Blackbox Exporter Experiement
+# Prometheus Blackbox Experiement
 
 I need to monitor some existing sites and I don't want to modify them to add `/metrics` endpoints. Prometheus' Blackbox Exporter seems to fit the bill. I will purposefully not use Docker Compose for this experiment because the server that will be used to host this system does not have it installed. This is meant to be an experiment to learn the system.
 
