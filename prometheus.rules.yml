@@ -1,0 +1,11 @@
+groups:
+  - name: site-down
+    rules:
+      - alert: probe-failure
+        expr: probe_success < 1
+        for: 30s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Site Down: {{$labels.instance}}"
+          description: "No response from {{$labels.instance}} for 30s"
