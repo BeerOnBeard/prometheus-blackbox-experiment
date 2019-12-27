@@ -5,7 +5,10 @@ I need to monitor some existing sites and I don't want to modify them to add `/m
 ## Usage
 
 ```bash
-PBE_EMAIL_TO=myemail@test.test PBE_EMAIL_FROM=alerter@test.test PBE_EMAIL_PASSWORD=superS3cretPa55word ./setup.sh https://example.com https://subdomain.example.com
+PBE_EMAIL_TO=myemail@test.test \
+PBE_EMAIL_FROM=alerter@test.test \
+PBE_EMAIL_PASSWORD=superS3cretPa55word \
+./setup.sh https://example.com https://subdomain.example.com;
 ```
 
 The following environment variables must be specified
