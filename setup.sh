@@ -88,7 +88,6 @@ function setupDocker()
     --config.file=/config/prometheus.yml;
 
   docker run -d \
-    -p 9115:9115 \
     -v $(pwd)/blackbox.yml:/config/blackbox.yml:ro \
     --restart always \
     --name pbe_blackbox \
@@ -97,7 +96,6 @@ function setupDocker()
     --config.file=/config/blackbox.yml;
 
   docker run -d \
-    -p 9093:9093 \
     -v $(pwd)/alertmanager.yml:/config/alertmanager.yml:ro \
     --restart always \
     --name pbe_alertmanager \
